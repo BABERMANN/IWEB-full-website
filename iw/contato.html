@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Contato | Cauã Habermann</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header id="topo">
+            <h1>Vamos conversar?</h1>
+            <p>Estas são as formas de falar comigo e um formulário para enviar uma mensagem.</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Ir para a página inicial: Sobre mim">Sobre mim</a></li>
+                    <li><a href="formacao.html" title="Ir para a página de formação e habilidades">Formação e habilidades</a></li>
+                    <li><a href="contato.html" class="atual" title="Você está na página de contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+
+                <section>
+                    <h2>Onde me encontrar</h2>
+                    <p>
+                        Se você quer trocar ideias sobre tecnologia, falar sobre um projeto ou fazer uma
+                        proposta, escolha o canal que preferir:
+                    </p>
+                    <dl>
+                        <dt>E-mail</dt>
+                        <dd><a href="mailto:cauahabermann7@gmail.com" title="Enviar um e-mail para o Cauã">cauahabermann7@gmail.com</a></dd>
+                        <dt>GitHub</dt>
+                        <dd><a href="https://github.com/BABERMANN" target="_blank" title="Abrir o perfil do Cauã no GitHub em uma nova aba">github.com/BABERMANN</a></dd>
+                        <dt>LinkedIn</dt>
+                        <dd><a href="https://www.linkedin.com/in/cau%C3%A3-habermann/" target="_blank" title="Abrir o perfil do Cauã no LinkedIn em uma nova aba">linkedin.com/in/cauã-habermann</a></dd>
+                        <dt>Cidade</dt>
+                        <dd>São Carlos, SP</dd>
+                    </dl>
+                </section>
+
+                <section id="formulario">
+                    <h2>Envie uma mensagem</h2>
+                    <p>
+                        Os campos marcados como obrigatórios precisam ser preenchidos antes do envio.
+                    </p>
+
+                    <form action="contato.html" method="GET" autocomplete="on">
+                        <input type="hidden" name="origem" value="pagina-contato">
+
+                        <fieldset>
+                            <legend>Seus dados</legend>
+
+                            <label for="nome">Nome completo (obrigatório)</label>
+                            <input id="nome" type="text" name="nome" minlength="3" maxlength="60"
+                                   placeholder="Digite o seu nome" required>
+
+                            <label for="email">E-mail (obrigatório)</label>
+                            <input id="email" type="email" name="email"
+                                   placeholder="nome@exemplo.com.br" required>
+
+                            <label for="retorno">Melhor dia e horário para retorno</label>
+                            <input id="retorno" type="datetime-local" name="retorno">
+
+                            <label for="nota">Que nota você dá para este site? (de 0 a 10)</label>
+                            <input id="nota" type="number" name="nota" min="0" max="10" step="1" value="10">
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Sobre a mensagem</legend>
+
+                            <label for="resumo">Resumo do assunto</label>
+                            <input id="resumo" type="text" name="resumo" minlength="3" maxlength="40"
+                                   pattern="[A-Za-zÀ-ÿ0-9 ]{3,40}"
+                                   title="Use de 3 a 40 letras, números ou espaços"
+                                   placeholder="Ex.: Projeto em grupo">
+
+                            <label for="assunto">Tipo de contato</label>
+                            <select id="assunto" name="assunto">
+                                <option value="">---</option>
+                                <option value="estagio">Oportunidade de estágio</option>
+                                <option value="projeto">Projeto em grupo</option>
+                                <option value="duvida">Dúvida sobre os meus repositórios</option>
+                                <option value="outro" selected>Outro assunto</option>
+                            </select>
+
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="6" cols="50" maxlength="500"
+                                      placeholder="Escreva aqui a sua mensagem" required></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Preferências de resposta</legend>
+
+                            <p>Como você prefere que eu responda?</p>
+                            <section class="opcoes">
+                                <label class="opcao" for="resp-email">
+                                    <input id="resp-email" type="radio" name="resposta" value="email" checked>E-mail
+                                </label>
+                                <label class="opcao" for="resp-linkedin">
+                                    <input id="resp-linkedin" type="radio" name="resposta" value="linkedin">LinkedIn
+                                </label>
+                                <label class="opcao" for="resp-github">
+                                    <input id="resp-github" type="radio" name="resposta" value="github">GitHub
+                                </label>
+                            </section>
+                            <p>Quero acompanhar:</p>
+                            <section class="opcoes">
+                                <label class="opcao" for="ac-repos">
+                                    <input id="ac-repos" type="checkbox" name="acompanhar[]" value="repositorios">Novos repositórios
+                                </label>
+                                <label class="opcao" for="ac-start">
+                                    <input id="ac-start" type="checkbox" name="acompanhar[]" value="start">Projeto StArt
+                                </label>
+                                <label class="opcao" for="ac-estudos">
+                                    <input id="ac-estudos" type="checkbox" name="acompanhar[]" value="estudos">Resumos de estudo
+                                </label>
+                            </section>
+                        </fieldset>
+
+                        <section class="opcoes">
+                            <input type="submit" value="Enviar mensagem">
+                            <input type="reset" value="Limpar formulário">
+                        </section>
+                    </form>
+                </section>
+                <section>
+                    <h2>Perguntas frequentes</h2>
+                    <dl>
+                        <dt>Este formulário envia a mensagem?</dt>
+                        <dd>Não. Ele é uma demonstração feita para a disciplina e não possui servidor. Para falar comigo, use o e-mail ou o LinkedIn.</dd>
+                        <dt>Posso ver o código deste site?</dt>
+                        <dd>Sim! Os projetos ficam no meu <a href="https://github.com/BABERMANN" target="_blank" title="Abrir o GitHub do Cauã em uma nova aba">GitHub</a>.</dd>
+                    </dl>
+                </section>
+            </article>
+            <aside>
+                <h2>Contato rápido</h2>
+                <ul>
+                    <li><a href="mailto:cauahabermann7@gmail.com" title="Enviar um e-mail para o Cauã">cauahabermann7@gmail.com</a></li>
+                    <li><a href="https://github.com/BABERMANN" target="_blank" title="Abrir o GitHub do Cauã em uma nova aba">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/cau%C3%A3-habermann/" target="_blank" title="Abrir o LinkedIn do Cauã em uma nova aba">LinkedIn</a></li>
+                </ul>
+                    
+                    </tfoot>
+                </table>
+            </aside>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Ir para a página inicial">Sobre mim</a></li>
+                    <li><a href="formacao.html" title="Ir para formação e habilidades">Formação e habilidades</a></li>
+                    <li><a href="contato.html" title="Ir para a página de contato">Contato</a></li>
+                    <li><a href="#topo" title="Voltar ao topo da página">Voltar ao topo</a></li>
+                </ul>
+            </nav>
+            <p>Trabalho da disciplina de Introdução a Web (IWEB), IFSP São Carlos. Feito por Cauã Habermann.</p>
+        </footer>
+    </body>
+</html>

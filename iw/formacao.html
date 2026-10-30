@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Formação e habilidades | Cauã Habermann</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+
+    <body>
+        <header id="topo">
+            <h1>Formação, experiência e habilidades</h1>
+            <p>O que estudo, onde atuo e quais tecnologias fazem parte do meu dia a dia.</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Ir para a página inicial: Sobre mim">Sobre mim</a></li>
+                    <li><a href="formacao.html" class="atual" title="Você está na página de formação e habilidades">Formação e habilidades</a></li>
+                    <li><a href="contato.html" title="Ir para a página de contato e formulário">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <section id="formacao">
+                    <h2>Formação acadêmica</h2>
+                    <p>
+                        Sou estudante do curso de <strong>Tecnologia em Análise e Desenvolvimento de Sistemas</strong>
+                        (<abbr title="Tecnologia em Análise e Desenvolvimento de Sistemas">TADS</abbr>) no
+                        <abbr title="Instituto Federal de Educação, Ciência e Tecnologia de São Paulo">IFSP</abbr>,
+                        câmpus São Carlos, desde <time datetime="2025">2025</time>. A tabela mostra as disciplinas
+                        que mais aparecem nos meus estudos e nos meus repositórios.
+                    </p>
+
+                    <table>
+                        <caption>Disciplinas e tecnologias estudadas no curso</caption>
+                        <colgroup span="1"></colgroup>
+                        <thead>
+                            <tr>
+                                <th>Área</th>
+                                <th>Disciplina</th>
+                                <th>Tecnologia</th>
+                                <th>Principais tópicos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Programação</td>
+                                <td>Estrutura de Dados<sup>1</sup></td>
+                                <td>Linguagem C</td>
+                                <td>Listas, filas, pilhas e árvores</td>
+                            </tr>
+                            <tr>
+                                <td>Programação Orientada a Objetos</td>
+                                <td>Linguagem Java</td>
+                                <td>Classes, objetos e métodos</td>
+                            </tr>
+                            <tr>
+                                <td>Web</td>
+                                <td>Introdução a Web</td>
+                                <td>HTML5 e CSS3</td>
+                                <td>Tags semânticas, seletores e modelo de caixa</td>
+                            </tr>
+                            <tr>
+                                <td>Dados</td>
+                                <td>Banco de Dados 1</td>
+                                <td>SQL (PostgreSQL)</td>
+                                <td>Criação de tabelas e comandos de consulta</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4"><sup>1</sup> Inclui lista sequencial, TAD Árvore e árvore binária com percursos.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+                <section id="experiencia">
+                    <h2>Experiência</h2>
+                    <article>
+                        <header>
+                            <h3>Desenvolvedor front-end no PET ADS (IFSP)</h3>
+                            <p><span class="etiqueta">Atual</span></p>
+                        </header>
+                        <p>
+                            O <strong>PET ADS</strong> é o grupo do Programa de Educação Tutorial do curso de ADS no IFSP
+                            São Carlos. Nele, atuo como pesquisador e desenvolvedor na ferramenta <strong>StArt</strong>
+                            (<i lang="en">State of the Art through Systematic Review</i>), plataforma que ajuda
+                            pesquisadores a conduzir revisões sistemáticas da literatura, automatizando e organizando
+                            as etapas mais trabalhosas.
+                        </p>
+                        <dl>
+                            <dt>Função</dt>
+                            <dd>Desenvolvedor front-end</dd>
+                            <dt>Objetivo</dt>
+                            <dd>Modernizar a interface e a experiência de uso para pesquisadores, tornando o processo mais intuitivo e organizado.</dd>
+                            <dt>Tecnologias</dt>
+                            <dd>React e TypeScript</dd>
+                        </dl>
+                        <footer>
+                            <p>Repositório do front-end: <a href="https://github.com/pet-ads/systematic-front" target="_blank" title="Abrir o repositório systematic-front do PET ADS no GitHub em uma nova aba">pet-ads/systematic-front</a>.</p>
+                        </footer>
+                    </article>
+                </section>
+                <section id="habilidades">
+                    <h2>Habilidades</h2>
+                    <p>
+                        Estas são as tecnologias que uso ou estou aprendendo.
+                    </p>
+                    <h3>Por categoria</h3>
+                    <dl>
+                        <dt>Front-end</dt>
+                        <dd>HTML, CSS, JavaScript, TypeScript, React e Chakra UI</dd>
+                        <dt>Linguagens</dt>
+                        <dd>C, Java e Python (em aprendizado)</dd>
+                        <dt>Dados</dt>
+                        <dd>SQL com PostgreSQL</dd>
+                        <dt>Ferramentas</dt>
+                        <dd>Git e GitHub</dd>
+                    </dl>
+                </section>
+
+                <section class="barras">
+                    <h2>Nível de cada tecnologia</h2>
+                    <p>
+                        <label for="p-html">HTML5</label>
+                        <progress id="p-html" value="70" max="100">70%</progress>
+                    </p>
+                    <p>
+                        <label for="p-css">CSS3</label>
+                        <progress id="p-css" value="60" max="100">60%</progress>
+                    </p>
+                    <p>
+                        <label for="p-js">JavaScript</label>
+                        <progress id="p-js" value="60" max="100">60%</progress>
+                    </p>
+                    <p>
+                        <label for="p-ts">TypeScript</label>
+                        <progress id="p-ts" value="50" max="100">50%</progress>
+                    </p>
+                    <p>
+                        <label for="p-react">React</label>
+                        <progress id="p-react" value="50" max="100">50%</progress>
+                    </p>
+                    <p>
+                        <label for="p-c">Linguagem C</label>
+                        <progress id="p-c" value="55" max="100">55%</progress>
+                    </p>
+                    <p>
+                        <label for="p-java">Java</label>
+                        <progress id="p-java" value="50" max="100">50%</progress>
+                    </p>
+                    <p>
+                        <label for="p-sql">SQL</label>
+                        <progress id="p-sql" value="45" max="100">45%</progress>
+                    </p>
+                    <p>
+                        <label for="p-git">Git e GitHub</label>
+                        <progress id="p-git" value="60" max="100">60%</progress>
+                    </p>
+                    <p>
+                        <label for="p-py">Python</label>
+                        <progress id="p-py" value="35" max="100">35%</progress>
+                    </p>
+                </section>
+                <section id="projetos" class="cartoes">
+                    <h2>Projetos e repositórios</h2>
+                    <article>
+                        <h3>Learning-Path</h3>
+                        <p><span class="etiqueta">C</span></p>
+                        <p>Exercícios feitos em aula, com a prática de lógica e de estruturas de dados.</p>
+                        <a href="https://github.com/BABERMANN/Learning-Path" target="_blank" title="Abrir o repositório Learning-Path no GitHub em uma nova aba">Ver no GitHub</a>
+                    </article>
+                    <article>
+                        <h3>EDD-learning</h3>
+                        <p><span class="etiqueta">C</span></p>
+                        <p>Exercícios para praticar Estrutura de Dados: listas, filas, pilhas e árvores.</p>
+                        <a href="https://github.com/BABERMANN/EDD-learning" target="_blank" title="Abrir o repositório EDD-learning no GitHub em uma nova aba">Ver no GitHub</a>
+                    </article>
+                    <article>
+                        <h3>POO-learnings</h3>
+                        <p><span class="etiqueta">Java</span></p>
+                        <p>Exercícios para praticar programação orientada a objetos.</p>
+                        <a href="https://github.com/BABERMANN/POO-learnings" target="_blank" title="Abrir o repositório POO-learnings no GitHub em uma nova aba">Ver no GitHub</a>
+                    </article>
+                    <article>
+                        <h3>desafio-MG5</h3>
+                        <p><span class="etiqueta">JavaScript</span></p>
+                        <p>Desafio técnico desenvolvido em JavaScript.</p>
+                        <a href="https://github.com/BABERMANN/desafio-MG5" target="_blank" title="Abrir o repositório desafio-MG5 no GitHub em uma nova aba">Ver no GitHub</a>
+                    </article>
+                    <article>
+                        <h3>systematic-front</h3>
+                        <p><span class="etiqueta">TypeScript</span></p>
+                        <p>Fork do front-end da ferramenta StArt, desenvolvida pelo PET ADS.</p>
+                        <a href="https://github.com/BABERMANN/systematic-front" target="_blank" title="Abrir o repositório systematic-front no GitHub em uma nova aba">Ver no GitHub</a>
+                    </article>
+                </section>
+  
+                <section id="idiomas" class="barras">
+                    <h2>Idiomas</h2>
+                    <p>
+                        <label for="m-pt">Português (nativo)</label>
+                        <meter id="m-pt" min="0" max="100" value="100">100%</meter>
+                    </p>
+                    <p>
+                        <label for="m-en">Inglês (avançado)</label>
+                        <meter id="m-en" min="0" max="100" value="85">85%</meter>
+                    </p>
+                </section>
+            </article>
+            <aside>
+                <h2>Nesta página</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#formacao" title="Ir para a seção Formação acadêmica">Formação acadêmica</a></li>
+                        <li><a href="#experiencia" title="Ir para a seção Experiência">Experiência</a></li>
+                        <li><a href="#habilidades" title="Ir para a seção Habilidades">Habilidades</a></li>
+                        <li><a href="#projetos" title="Ir para a seção Projetos e repositórios">Projetos</a></li>
+                        <li><a href="#codigo" title="Ir para a seção Exemplo de código">Exemplo de código</a></li>
+                        <li><a href="#idiomas" title="Ir para a seção Idiomas">Idiomas</a></li>
+                        <li><a href="#topo" title="Voltar ao topo da página">Voltar ao topo</a></li>
+                    </ul>
+                </nav>
+
+                <h2>Meu câmpus</h2>
+                <img src="img/ifsp.jpg" width="600" height="400"
+                     alt="Ilustração de um prédio verde de dois andares com janelas brancas, representando o câmpus do IFSP">
+                <p>IFSP, câmpus São Carlos: onde faço o curso de ADS.</p>
+                
+            </aside>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Ir para a página inicial">Sobre mim</a></li>
+                    <li><a href="formacao.html" title="Ir para formação e habilidades">Formação e habilidades</a></li>
+                    <li><a href="contato.html" title="Ir para a página de contato">Contato</a></li>
+                    <li><a href="#topo" title="Voltar ao topo da página">Voltar ao topo</a></li>
+                </ul>
+            </nav>
+            <p>Trabalho da disciplina de Introdução a Web (IWEB), IFSP São Carlos. Feito por Cauã Habermann.</p>
+        </footer>
+    </body>
+</html>
